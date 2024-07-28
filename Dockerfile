@@ -1,4 +1,4 @@
 FROM grafana/grafana:latest
 
 COPY datasource.yml /etc/grafana/provisioning/datasources/datasource.yml
-COPY dashboards/ /etc/grafana/provisioning/dashboards
+COPY dashboards /var/lib/grafana/dashboards

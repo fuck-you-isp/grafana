@@ -83,7 +83,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 7,
+        "h": 5,
         "w": 12,
         "x": 0,
         "y": 0
@@ -183,7 +183,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 7,
+        "h": 5,
         "w": 12,
         "x": 12,
         "y": 0
@@ -286,7 +286,7 @@
         "h": 7,
         "w": 12,
         "x": 0,
-        "y": 7
+        "y": 5
       },
       "id": 11,
       "options": {
@@ -386,9 +386,9 @@
         "h": 7,
         "w": 12,
         "x": 12,
-        "y": 7
+        "y": 5
       },
-      "id": 9,
+      "id": 10,
       "options": {
         "legend": {
           "calcs": [],
@@ -410,7 +410,7 @@
             "uid": "PBFA97CFB590B2093"
           },
           "editorMode": "code",
-          "expr": "max by (name) (ping_rtt_seconds{type=\"mean\", name=~\"Hetzner.*\"})",
+          "expr": "max by (name) (ping_rtt_seconds{type=\"mean\", name=~\"dev.*\"})",
           "hide": false,
           "instant": false,
           "legendFormat": "{{name}}",
@@ -418,7 +418,7 @@
           "refId": "A"
         }
       ],
-      "title": "Hetzner",
+      "title": "Various Dev Related Services",
       "type": "timeseries"
     },
     {
@@ -483,10 +483,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 7,
+        "h": 8,
         "w": 12,
         "x": 0,
-        "y": 14
+        "y": 12
       },
       "id": 12,
       "options": {
@@ -583,12 +583,12 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 7,
+        "h": 8,
         "w": 12,
         "x": 12,
-        "y": 14
+        "y": 12
       },
-      "id": 3,
+      "id": 9,
       "options": {
         "legend": {
           "calcs": [],
@@ -610,7 +610,7 @@
             "uid": "PBFA97CFB590B2093"
           },
           "editorMode": "code",
-          "expr": "max by (name) (ping_rtt_seconds{type=\"mean\", name=~\"GCP.*\"})",
+          "expr": "max by (name) (ping_rtt_seconds{type=\"mean\", name=~\"Hetzner.*\"})",
           "hide": false,
           "instant": false,
           "legendFormat": "{{name}}",
@@ -618,107 +618,7 @@
           "refId": "A"
         }
       ],
-      "title": "Google Cloud Platform",
-      "type": "timeseries"
-    },
-    {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "PBFA97CFB590B2093"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisBorderShow": false,
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "barWidthFactor": 0.6,
-            "drawStyle": "line",
-            "fillOpacity": 0,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "insertNulls": false,
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": 0
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          },
-          "unit": "s"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 7,
-        "w": 12,
-        "x": 0,
-        "y": 21
-      },
-      "id": 10,
-      "options": {
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "tooltip": {
-          "hideZeros": false,
-          "mode": "single",
-          "sort": "none"
-        }
-      },
-      "pluginVersion": "12.1.1",
-      "targets": [
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "PBFA97CFB590B2093"
-          },
-          "editorMode": "code",
-          "expr": "max by (name) (ping_rtt_seconds{type=\"mean\", name=~\"dev.*\"})",
-          "hide": false,
-          "instant": false,
-          "legendFormat": "{{name}}",
-          "range": true,
-          "refId": "A"
-        }
-      ],
-      "title": "Various Dev Related Services",
+      "title": "Hetzner",
       "type": "timeseries"
     }
   ],

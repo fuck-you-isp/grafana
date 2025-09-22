@@ -110,7 +110,7 @@
             "uid": "PBFA97CFB590B2093"
           },
           "editorMode": "code",
-          "expr": "max by (name) (ping_rtt_seconds{type=\"mean\", name!~\"AWS.*|DevTunnel.*|Hetzner.*|Linode.*|GCP.*|OCI.*|Digital.*|Exoscale.*|OVH.*|Vultr.*|.*-dns|dev-.*\"})",
+          "expr": "max by (name) (ping_rtt_seconds{type=\"mean\", name!~\"AMZN.*|DevTunnel.*|Hetzner.*|Linode.*|GCP.*|OCI.*|Digital.*|Exoscale.*|OVH.*|Vultr.*|.*-dns|dev-.*\"})",
           "hide": false,
           "instant": false,
           "legendFormat": "{{name}}",
@@ -510,7 +510,7 @@
             "uid": "PBFA97CFB590B2093"
           },
           "editorMode": "code",
-          "expr": "max by (name) (ping_rtt_seconds{type=\"mean\", name=~\"AWS.*\"})",
+          "expr": "max by (name) (ping_rtt_seconds{type=\"mean\", name=~\"AMZN.*\"})",
           "hide": false,
           "instant": false,
           "legendFormat": "{{name}}",
